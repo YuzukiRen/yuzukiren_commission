@@ -5,7 +5,7 @@
  * Keep this file beside the assets directory so relative URLs keep working.
  */
 
-@import url("./native-scale.css");
+@import url("./native-scale.css?v=20260903-3");
 
 @font-face {
   font-family: "Xiaolai Blivechat";
@@ -291,8 +291,7 @@ yt-live-chat-text-message-renderer yt-live-chat-author-chip::after {
   transform: translateY(-51%);
 }
 
-yt-live-chat-text-message-renderer #author-name,
-yt-live-chat-text-message-renderer #author-name * {
+yt-live-chat-text-message-renderer #author-name {
   display: block !important;
   max-width: 100% !important;
   overflow: hidden !important;
@@ -306,6 +305,7 @@ yt-live-chat-text-message-renderer #author-name * {
 }
 
 yt-live-chat-text-message-renderer #chat-badges,
+yt-live-chat-text-message-renderer #chip-badges,
 yt-live-chat-text-message-renderer yt-live-chat-author-badge-renderer,
 yt-live-chat-text-message-renderer yt-live-chat-author-medal-renderer {
   display: none !important;
