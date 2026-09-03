@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blivechat 蓝色蝴蝶结弹幕样式预览</title>
+  <style>
+    :root { color-scheme: light; }
+    html, body { min-height: 100%; }
+    body {
+      display: grid;
+      place-items: start center;
+      background:
+        linear-gradient(rgba(31, 55, 111, .06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(31, 55, 111, .06) 1px, transparent 1px),
+        #eef5ff !important;
+      background-size: 24px 24px !important;
+    }
+    .preview-shell {
+      width: 640px;
+      min-height: 100vh;
+      padding: 18px 0 24px;
+      border-right: 1px dashed rgba(65, 95, 166, .22);
+      border-left: 1px dashed rgba(65, 95, 166, .22);
+    }
+    .preview-label {
+      margin: 0 18px 16px;
+      color: #5874b8;
+      font: 13px/1.4 "Microsoft YaHei", sans-serif;
+      letter-spacing: .08em;
+      text-align: center;
+    }
+    .preview-long-label {
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px dashed rgba(65, 95, 166, .24);
+    }
+  </style>
+  <link rel="stylesheet" href="./theme.css">
+</head>
+<body>
+  <main class="preview-shell">
+    <p class="preview-label">640 PX · NATIVE-SCALE BLIVECHAT THEME PREVIEW</p>
+    <yt-live-chat-renderer>
+      <yt-live-chat-item-list-renderer>
+        <div id="item-scroller">
+          <yt-live-chat-text-message-renderer author-type="" blc-guard-level="0">
+            <div id="card"></div>
+            <yt-img-shadow id="author-photo"></yt-img-shadow>
+            <div id="content">
+              <yt-live-chat-author-chip>
+                <span id="author-name">普通观众</span>
+                <span id="chat-badges"></span>
+              </yt-live-chat-author-chip>
+              <span id="timestamp">20:00</span>
+              <span id="message">说点什么看看颜色</span>
+            </div>
+          </yt-live-chat-text-message-renderer>
+
+          <yt-live-chat-text-message-renderer author-type="member" blc-guard-level="3">
+            <div id="card"></div>
+            <yt-img-shadow id="author-photo"></yt-img-shadow>
+            <div id="content">
+              <yt-live-chat-author-chip><span id="author-name">舰长昵称</span><span id="chat-badges"></span></yt-live-chat-author-chip>
+              <span id="message">说点什么看看颜色</span>
+            </div>
+          </yt-live-chat-text-message-renderer>
+
+          <yt-live-chat-text-message-renderer author-type="moderator" blc-guard-level="0">
+            <div id="card"></div>
+            <yt-img-shadow id="author-photo"></yt-img-shadow>
+            <div id="content">
+              <yt-live-chat-author-chip><span id="author-name">房管昵称稍微长一点</span><span id="chat-badges"></span></yt-live-chat-author-chip>
+              <span id="message">说点什么看看颜色</span>
+            </div>
+          </yt-live-chat-text-message-renderer>
+
+          <yt-live-chat-membership-item-renderer show-only-header blc-guard-level="3">
+            <div id="card">
+              <div id="header">
+                <yt-img-shadow id="author-photo"></yt-img-shadow>
+                <div id="header-content">
+                  <div id="header-content-primary-column">
+                    <div id="header-content-inner-column">
+                      <yt-live-chat-author-chip><span id="author-name">新舰长昵称</span><span id="chat-badges"></span></yt-live-chat-author-chip>
+                    </div>
+                    <div id="header-subtext">欢迎成为舰长</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </yt-live-chat-membership-item-renderer>
+
+          <yt-live-chat-paid-message-renderer blc-price-level="4">
+            <div id="card">
+              <div id="header">
+                <yt-img-shadow id="author-photo"></yt-img-shadow>
+                <div id="header-content">
+                  <div id="header-content-primary-column">
+                    <div id="author-name">醒目留言昵称</div>
+                    <div id="purchase-amount">¥ 100.00</div>
+                  </div>
+                </div>
+              </div>
+              <div id="content"><div id="message">说点什么看看颜色</div></div>
+            </div>
+          </yt-live-chat-paid-message-renderer>
+
+          <p class="preview-label preview-long-label">LONG MESSAGE · 自动换行测试</p>
+
+          <yt-live-chat-text-message-renderer author-type="" blc-guard-level="0">
+            <div id="card"></div>
+            <yt-img-shadow id="author-photo"></yt-img-shadow>
+            <div id="content">
+              <yt-live-chat-author-chip><span id="author-name">普通观众</span><span id="chat-badges"></span></yt-live-chat-author-chip>
+              <span id="message">这是一条用来检查自动换行和间距的较长弹幕内容。</span>
+            </div>
+          </yt-live-chat-text-message-renderer>
+
+          <yt-live-chat-text-message-renderer author-type="member" blc-guard-level="3">
+            <div id="card"></div>
+            <yt-img-shadow id="author-photo"></yt-img-shadow>
+            <div id="content">
+              <yt-live-chat-author-chip><span id="author-name">舰长昵称</span><span id="chat-badges"></span></yt-live-chat-author-chip>
+              <span id="message">舰长弹幕较长时会在框内自动换行，并保持底部装饰贴边。</span>
+            </div>
+          </yt-live-chat-text-message-renderer>
+
+          <yt-live-chat-text-message-renderer author-type="moderator" blc-guard-level="0">
+            <div id="card"></div>
+            <yt-img-shadow id="author-photo"></yt-img-shadow>
+            <div id="content">
+              <yt-live-chat-author-chip><span id="author-name">房管昵称稍微长一点</span><span id="chat-badges"></span></yt-live-chat-author-chip>
+              <span id="message">房管发送较长内容时也会换行，可继续对比正文大小与行距。</span>
+            </div>
+          </yt-live-chat-text-message-renderer>
+        </div>
+      </yt-live-chat-item-list-renderer>
+    </yt-live-chat-renderer>
+  </main>
+</body>
+</html>
